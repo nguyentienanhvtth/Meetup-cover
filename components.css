@@ -1,0 +1,84 @@
+/* header */
+.header{
+    padding: 20px;
+}
+
+.header-right{
+    line-height: 44px;
+}
+
+.header-right li{
+    line-height: 28px;
+}
+
+.header-right .start-new a{
+    color: #00a2c7;
+    font-weight: bold;
+    padding: 0 16px 0 0;
+    border-right: 1px solid rgba(46,62,72,.12);
+    display: inline-block;
+}   
+
+.header-right li a{
+    padding-left: 20px;
+    color: rgb(117, 117, 117);
+}
+
+.header-right li a:hover{
+    color: #00a2c7;
+}
+
+/* list-inline */
+.list-inline{
+    margin: 0;
+}
+.list-inline li{
+    display: inline-block;
+}
+
+
+/* banner */
+.banner{
+    position: relative;
+}
+
+.background-video{
+    position: relative;
+    min-height: 460px;
+    overflow: hidden;
+}
+
+.background-video video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.background-video::after{
+    background: rgba(0,0,0,.2);
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.banner-content .title h1{
+    font-size: 44px;
+    font-weight: 900;
+}
+/* banner-end */
